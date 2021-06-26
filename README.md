@@ -27,7 +27,7 @@ The first line of the csv table contains the names of the fields. Size of the ta
 
 ## Examples of extracted tables
 
-![Alt text](/Screenshot_of_table.png?raw=true "Screenshot of extracted table")
+![Alt text](/Images/Screenshot_of_table.png?raw=true "Screenshot of extracted table")
 
 
 ## Usage
@@ -69,4 +69,4 @@ Please make sure to update tests as appropriate.
 
 
 ## TO DO:
--Add exact run script times
+*Add exact run script times
