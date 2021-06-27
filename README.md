@@ -12,14 +12,14 @@ https://www.capital.lt/lt/nekilnojamas-turtas/
 ## Description
 
 We want to have an idea what is flat situation in Kaunas. Specifically, we are interested in flat's:
-1. Location (Rajonas)
-2. Street (Gatve)
-3. Price (Kaina)
-4. Size (Dydis)
-5. Number of rooms (Kambariai)
-6. Year (Metai)
-7. Floor/How many floors (Aukstas/is)
-8*. (Just in case) I will be saving URL of each ad (Nuoroda) 
+Markup: 1. Location (Rajonas)
+        2. Street (Gatve)
+        3. Price (Kaina)
+        4. Size (Dydis)
+        5. Number of rooms (Kambariai)
+        6. Year (Metai)
+        7. Floor/How many floors (Aukstas/is)
+        8. (Just in case) I will be saving URL of each ad (Nuoroda) 
 
 This information should be put in a csv table, that can be later cleaned, merged, analyzed and plotted.
 
@@ -27,7 +27,7 @@ The first line of the csv table contains the names of the fields. Size of the ta
 
 ## Examples of extracted tables
 
-![Alt text](/images/Screenshot_of_table.png?raw=true "Screenshot of extracted table")
+![picture alt](/images/Screenshot_of_table.png?raw=true "Screenshot of extracted table")
 
 
 ## Usage
