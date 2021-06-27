@@ -28,3 +28,4 @@ class aruodascrawl(scrapy.Spider):
         first_url=response.request.url
         if next_page is not None and first_url.find(next_page)==-1:
                 yield response.follow(next_page ,callback=self.parse)
+                
