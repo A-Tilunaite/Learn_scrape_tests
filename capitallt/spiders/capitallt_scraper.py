@@ -55,3 +55,4 @@ class CapitalltSpider(scrapy.Spider):
         next_page = response.css('div.right-side').css('a').attrib['href']
         if next_page is not None:
             yield response.follow(next_page, callback =self.parse)
+            
