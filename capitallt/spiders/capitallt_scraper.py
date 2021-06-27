@@ -6,19 +6,19 @@ class CapitalltSpider(scrapy.Spider):
 
     def parse(self,response):
         for flats in  response.xpath('//a[re:test(@class,"realty-item.realty-status-*")]'):
-            dummy1 = flats.css('div.rid-place::text').get()
-            dummy3 = dummy1.split(',')
-            if len(dummy3)>3:
-                street = dummy3[3]
+            title = flats.css('div.rid-place::text').get()
+            sep_title = title.split(',')
+            if len(sep_title)>3:
+                street = sep_title[3]
             else:
                 street = 'NaN'
             
-            dummy4 = flats.css('div.rid-additional::text').get().split(',')
-            if len(dummy4)>1:
-                size=dummy4[1].replace(' m','')
-                rooms=dummy4[0].replace(' Kamb.','')
-            elif dummy4[0].find(' m')>-1:
-                size=dummy4[0].replace(' m','')
+            info_line1 = flats.css('div.rid-additional::text').get().split(',')
+            if len(info_line1)>1:
+                size=info_line1[1].replace(' m','')
+                rooms=info_line1[0].replace(' Kamb.','')
+            elif info_line1[0].find(' m')>-1:
+                size=info_line1[0].replace(' m','')
                 rooms='NaN'
             else:
                 size='NaN'
@@ -28,22 +28,22 @@ class CapitalltSpider(scrapy.Spider):
                 year = 'NaN'
                 floor= 'NaN'
             else:
-                dummy5 = flats.css('div.rid-additional::text').getall()[1].split(',')
-                if len(dummy5)>2:
-                    year = dummy5[2].strip()
-                    floor = dummy5[1].replace(' Aukšt.','').strip()
-                elif dummy5[1].find('Auk')>-1:
-                    floor = dummy5[1].replace(' Aukšt.','').strip()
+                info_line2 = flats.css('div.rid-additional::text').getall()[1].split(',')
+                if len(info_line2)>2:
+                    year = info_line2[2].strip()
+                    floor = info_line2[1].replace(' Aukšt.','').strip()
+                elif info_line2[1].find('Auk')>-1:
+                    floor = info_line2[1].replace(' Aukšt.','').strip()
                     year = NaN
                 else:
-                    year=dummy5[1].strip()
+                    year=info_line2[1].strip()
                     floor='NaN'
 
                 
 
-            yield{
-                'Pavadinimas': dummy1,
-                'Rajonas': dummy3[2],
+            yield {
+                'Pavadinimas': title,
+                'Rajonas': sep_title[2],
                 'Gatve' : street,
                 'Kaina': flats.css('div.realty-item-price').css('strong::text').get().replace('€',''),
                 'Dydis': size,
