@@ -12,7 +12,7 @@ https://www.capital.lt/lt/nekilnojamas-turtas/
 ## Description
 
 We want to have an idea what is flat situation in Kaunas. Specifically, we are interested in flat's:
-Markup: 1. Location (Rajonas)
+        1. Location (Rajonas)
         2. Street (Gatve)
         3. Price (Kaina)
         4. Size (Dydis)
