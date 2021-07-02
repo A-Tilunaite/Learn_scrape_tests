@@ -39,21 +39,19 @@ In case different table structure is needed, these files from the Spider_scripts
 
 ## Run scripts and save data in local files
 
-In order to generate automatically generated scripts needed for the crawling, run 
+In order to generate automatically generated scripts needed for the crawling, run in terminal
 
-`start.py`
+`python start.py`
 
 When all needed files are in place, type in the terminal:
 
-`scrapy crawl capitallt -O <Name_of_the_saved_table>.csv`
+`cd <project_name>`
 
-and
+`scrapy crawl <project_name> -O <Name_of_the_saved_table>.csv`
 
-`scrapy crawl aruodas -O <Name_of_the_saved_table>.csv`
+where project name is either aruodas or capitallt
 
-to scrape the other website.
-
-P.S. In case HTTP error 403 appears, settings.py files may need to be altered accordingly. 
+P.S. In case HTTP error 403 appears (there are lines DEBUG: Crawled (403) in the output), settings.py files may need to be altered accordingly. 
 
 ## Instalation
 
@@ -80,4 +78,6 @@ Please make sure to update tests as appropriate.
 
 ## TO DO:
 * Add exact run script times
+* Create python or shell script, so that crawling would be possible with one line instead of current few
+* Get a more clear error code extraction
 * Test instalation for conda users
