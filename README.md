@@ -62,6 +62,7 @@ P.S. In case HTTP error 403 appears, settings.py files may need to be altered ac
 `pip install -r requirements.txt`
 
 Alternatively, for conda users, try to run:
+
 `conda install --file requirements.txt`
 
 * To clone this repository, type in the terminal:
