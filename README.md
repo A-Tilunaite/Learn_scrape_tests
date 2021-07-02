@@ -80,3 +80,4 @@ Please make sure to update tests as appropriate.
 
 ## TO DO:
 * Add exact run script times
+* Test instalation for conda users
