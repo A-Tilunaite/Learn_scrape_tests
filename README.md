@@ -32,32 +32,39 @@ The first line of the csv table contains the names of the fields. Size of the ta
 
 ## Usage
 
-In case different table structure is needed, these are the files that need to be changed:
+In case different table structure is needed, these files from the Spider_scripts need to be altered:
 
-* aroudas/spiders/aruodascrawl.py 
-* capitallt/spiders/capitallt_scraper.py
+* aruodas_scraper.py
+* capitallt_scraper.py
 
 ## Run scripts and save data in local files
 
-Type in the terminal:
+In order to generate automatically generated scripts needed for the crawling, run 
+
+`start.py`
+
+When all needed files are in place, type in the terminal:
 
 `scrapy crawl capitallt -O <Name_of_the_saved_table>.csv`
 
-and  
+and
 
-`scrapy crawl aruodascrawl -O <Name_of_the_saved_table>.csv`
+`scrapy crawl aruodas -O <Name_of_the_saved_table>.csv`
 
 to scrape the other website.
 
 ## Instalation
 
-Provided scraping scripts were written using Scrapy 2.4.1. To install scrapy type in the terminal:
+* To install required packages, type in the terminal:
 
-` pip install Scrapy`
+`pip install -r requirements.txt`
 
-Alternatively, to install Scrapy using conda, run:
+Alternatively, for conda users, try to run:
+`conda install --file requirements.txt`
 
-` conda install -c conda-forge scrapy`
+* To clone this repository, type in the terminal:
+
+`git clone https://github.com/A-Tilunaite/Learn_scrape_tests.git`
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
