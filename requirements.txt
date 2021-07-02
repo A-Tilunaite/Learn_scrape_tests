@@ -1,0 +1,4 @@
+###### Requirements without Version Specifiers ######`
+scrapy
+
+###### Requirements with Version Specifiers ######`
