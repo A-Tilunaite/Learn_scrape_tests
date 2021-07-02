@@ -53,6 +53,8 @@ and
 
 to scrape the other website.
 
+P.S. In case HTTP error 403 appears, settings.py files may need to be altered accordingly. 
+
 ## Instalation
 
 * To install required packages, type in the terminal:
