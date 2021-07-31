@@ -30,7 +30,7 @@ The first line of the csv table contains the names of the fields. Size of the ta
 ![picture alt](/images/Screenshot_of_table.png?raw=true "Screenshot of extracted table")
 
 
-## Usage
+## Alterations if needed
 
 In case different table structure is needed, these files from the Spider_scripts need to be altered:
 
