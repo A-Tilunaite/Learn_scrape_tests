@@ -1,4 +1,4 @@
 ###### Requirements without Version Specifiers ######`
-scrapy
 
 ###### Requirements with Version Specifiers ######`
+scrapy 2.4.1
