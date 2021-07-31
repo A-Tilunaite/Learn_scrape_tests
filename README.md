@@ -53,7 +53,7 @@ where project name is either ``aruodas`` or ``capitallt``
 
 P.S. In case HTTP error 403 appears (there are lines DEBUG: Crawled (403) in the output), settings.py files may need to be altered accordingly. 
 
-## Instalation
+## Installation
 
 * To install required packages, type in the terminal:
 
